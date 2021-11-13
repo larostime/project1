@@ -6,13 +6,13 @@ destination: /var/www/html
 hooks:
 ApplicationStop:
   location: stop_httpd.sh
-  timeout: 300
+  timeout: 3000
   runas: root
 BeforeInstall:
   location: remove_app.sh
-  timeout: 300
+  timeout: 3000
   runas: root
 ApplicationStart:
   location: start_httpd.sh
-  timeout: 300
+  timeout: 3000
   runas: root
