@@ -2,7 +2,4 @@ version: 0.0
 os: linux
 files:
   source: /
-  destination: /var/www/
-hooks:
-ApplicationStart:
-  location: start_app.sh
+  destination: /var/www/html/
