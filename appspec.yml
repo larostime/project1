@@ -4,9 +4,9 @@ files:
 source: /
 destination: /var/www/html
 hooks:
-ApplicationStop:
-location:stop_httpd.sh
+ ApplicationStop:
+location :stop_httpd.sh
 BeforeInstall:
-location:remove_app.sh
+location :remove_app.sh
 ApplicationStart:
-location:start_httpd.sh
+location :start_httpd.sh
