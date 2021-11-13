@@ -2,9 +2,7 @@ version: 0.0
 os: linux
 files:
   source: /
-  destination: /var/www/html
+  destination: /
 hooks:
 ApplicationStart:
-  location: start_httpd.sh
-  timeout: 3000
-  runas: ec2-user
+  location: start_app.sh
