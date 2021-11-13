@@ -5,8 +5,14 @@ source: /
 destination: /var/www/html
 hooks:
 ApplicationStop:
-	location: stop_httpd.sh
+  location: stop_httpd.sh
+  timeout: 300
+  runas: root
 BeforeInstall:
-	location: remove_app.sh
+  location: remove_app.sh
+  timeout: 300
+  runas: root
 ApplicationStart:
-	location: start_httpd.sh
+  location: start_httpd.sh
+  timeout: 300
+  runas: root
