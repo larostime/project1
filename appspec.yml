@@ -5,7 +5,7 @@ source: /
 destination: /var/www/html
 hooks:
 ApplicationStop:
-  location: stop_httpd.sh
+  location: /stop_httpd.sh
   timeout: 3000
   runas: root
 BeforeInstall:
