@@ -1,6 +1,0 @@
-Hooks: 
-  - BeforeInstall: "LambdaFunctionToValidateBeforeInstall" 
-  - AfterInstall: "LambdaFunctionToValidateAfterInstall" 
-  - AfterAllowTestTraffic: "LambdaFunctionToValidateAfterTestTrafficStarts" 
-  - BeforeAllowTraffic: "LambdaFunctionToValidateBeforeAllowingProductionTraffic" 
-  - AfterAllowTraffic: "LambdaFunctionToValidateAfterAllowingProductionTraffic"
