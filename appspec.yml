@@ -3,3 +3,10 @@ os: linux
 files:
 source: /
 destination: /var/www/html
+hooks:
+ApplicationStop:
+location:stop_httpd.sh
+BeforeInstall:
+location:remove_app.sh
+ApplicationStart:
+location:start_httpd.sh
