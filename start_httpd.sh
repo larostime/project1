@@ -1,2 +1,2 @@
-sudo systemctl start httpd.service
-chkconfig httpd on
+sudo systemctl stop httpd.service
+chkconfig httpd off
