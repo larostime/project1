@@ -2,8 +2,12 @@ version: 0.0
 os: linux
 files:
 source: /
-destination: /var/www/html
+destination: /home/ec2-user/app
 hooks:
+ApplicationStop:
+  location: /home/ec2-user/app/stop_httpd.sh
+  timeout: 3000
+  runas: root
 BeforeInstall:
   location: remove_app.sh
   timeout: 3000
