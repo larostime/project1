@@ -4,7 +4,7 @@ files:
   source: /
   destination: /home
 hooks:
-  BeforeInstall:
+BeforeInstall:
     - location: before.sh
       timeout: 300
   ApplicationStart:
