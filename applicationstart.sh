@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd /var/www/html
-systemctl stop httpd.service
+sudo systemctl stop httpd.service
