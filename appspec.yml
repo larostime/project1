@@ -7,6 +7,7 @@ hooks:
 BeforeInstall:
     - location: before.sh
       timeout: 300
-  ApplicationStart:
+ApplicationStart:
     - location: applicationstart.sh
       timeout: 3000
+
