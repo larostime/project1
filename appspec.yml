@@ -1,7 +1,8 @@
+version: 0.0
 os: linux
 files:
-  source: /
-  destination: /home
+    - source: /
+      destination: /home
 hooks:
 BeforeInstall:
     - location: before.sh
