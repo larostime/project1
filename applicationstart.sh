@@ -1,4 +1,5 @@
 #!/bin/bash
 
 cd /var/www/html
-sudo systemctl stop httpd.service
+rm index.html
+install index.html
