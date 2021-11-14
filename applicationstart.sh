@@ -1,5 +1,5 @@
 #!/bin/bash
 
 cd /var/www/html
-rm index.html
+sudo rm index.html
 install index.html
