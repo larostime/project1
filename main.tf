@@ -80,10 +80,10 @@ resource "aws_elb" "web" {
 }
 
 
-resource "aws_default_subnet" "default_az1" {
+resource "aws_default_subnet" "default_1" {
   availability_zone = data.aws_availability_zones.available.names[0]
 }
 
-resource "aws_default_subnet" "default_az2" {
+resource "aws_default_subnet" "default_2" {
   availability_zone = data.aws_availability_zones.available.names[1]
 }
